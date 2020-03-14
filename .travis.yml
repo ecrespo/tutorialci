@@ -11,4 +11,5 @@ script:
   - black --check .
   - safety check -r requirements.txt
   - mypy .
+  - pylint app.py
   - pycodestyle app.py

@@ -4,4 +4,5 @@ safety==1.8.7
 black==19.10b0
 pycodestyle==2.5.0
 Flask==1.0.2
+pylint==2.3.1
 
