@@ -11,3 +11,4 @@ script:
   - black --check .
   - safety check -r requirements.txt
   - mypy .
+  - pycodestyle app.py
