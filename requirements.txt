@@ -1,0 +1,6 @@
+bandit==1.6.2
+mypy==0.770
+safety==1.8.7
+black==19.10b0
+Flask==1.0.2
+
