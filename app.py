@@ -1,9 +1,9 @@
 from flask import Flask
 
-app = Flask(__name__)
+APP = Flask(__name__)
 
 
-@app.route("/<name>")
+@APP.route("/<name>")
 def hello_world(name: str) -> str:
     return hello_name(name)
 
@@ -13,4 +13,4 @@ def hello_name(name: str) -> str:
 
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    APP.run(debug=False)
