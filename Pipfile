@@ -9,8 +9,10 @@ v = {editable = true,version = "*"}
 black = "*"
 mypy = "*"
 safety = "*"
+pycodestyle = "*"
+pylint = "*"
 
 [packages]
-flask = ">=1.0.0"
+flask = "==0.12.2"
 [requires]
 python_version = "3.7"

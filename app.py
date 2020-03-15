@@ -1,16 +1,13 @@
 from flask import Flask
 
-APP = Flask(__name__)
+app = Flask(__name__)
 
+@app.route('/<nombre>')
+def hola_mundo(nombre: str) -> str:
+    return hola_nombre(nombre)
 
-@APP.route("/<name>")
-def hello_world(name: str) -> str:
-    return hello_name(name)
+def hola_nombre(nombre: str) -> int:
+    return f"hola, {nombre}"
 
-
-def hello_name(name: str) -> str:
-    return f"hello, {name}"
-
-
-if __name__ == "__main__":
-    APP.run(debug=False)
+if __name__ == '__main__':
+    app.run(debug=True)
