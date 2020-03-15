@@ -4,15 +4,15 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-bandit = "*"
+bandit = "==1.6.2"
 v = {editable = true,version = "*"}
-black = "*"
-mypy = "*"
-safety = "*"
-pycodestyle = "*"
-pylint = "*"
+black = "==19.10b0"
+mypy = "==0.770"
+safety = "==1.8.7"
+pycodestyle = "==2.5.0"
+pylint = "==2.3.1"
 
 [packages]
-flask = "==0.12.2"
+flask = "==1.0.0"
 [requires]
 python_version = "3.7"
