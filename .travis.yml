@@ -8,8 +8,18 @@ install:
   - pipenv install --dev
 script:
   - bandit ./*
-  - black --check .
+  - bandit -s B101 -ll -f screen app.py
+  - black -t py38 --check .
   - safety check -r requirements.txt
-  - mypy .
+  - mypy --python-version 3.8 --strict app.py
   - pylint app.py
-  - pycodestyle app.py
+  - radon cc mi raw app.py -na
+  - pycodestyle  --show-source --statistics app.py
+  - eradicate  app.py
+  - pyflakes app.py 
+  - python3 -m doctest -v app.py
+  - vulture app.py 
+  - coverage erase
+  - coverage run --branch app.py
+  - coverage report -m app.py
+
