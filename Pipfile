@@ -11,6 +11,11 @@ mypy = "==0.770"
 safety = "==1.8.7"
 pycodestyle = "==2.5.0"
 pylint = "==2.3.1"
+eradicate  = "==1.0"
+vulture = "=1.5"
+coverage = "==5.2.1"
+pyflakes = "==2.2.0"
+radon = "==4.1.0"
 
 [packages]
 flask = "==1.0.0"
